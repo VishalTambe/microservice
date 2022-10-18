@@ -21,7 +21,7 @@ public class UserApi {
 
   @GetMapping("/user")
   public EntityModel<User> getUser() {
-    User user = new User("Vishal Tambe", "11279695", "Pune");
+    User user = new User("Vishal Tambe", "11279696", "Pune");
     EntityModel<User> userEntity = EntityModel.of(user);
     WebMvcLinkBuilder linkToUsers =
         WebMvcLinkBuilder.linkTo(WebMvcLinkBuilder.methodOn(this.getClass()).getAllUsers());
